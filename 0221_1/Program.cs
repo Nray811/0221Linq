@@ -11,9 +11,8 @@ namespace _0221_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("輸入一串以逗號分隔的字串，並將其反向顯示");
-            string reverse = Console.ReadLine();
-            var result = reverse.Split(',').Reverse();
+            Console.WriteLine("輸入一串以逗號分隔的字串，並將其反向顯示");           
+            var result = Console.ReadLine().Split(',').Reverse();
             Console.WriteLine($"Reverse結果:{string.Join(",", result)}");
             Console.ReadKey();
         }
